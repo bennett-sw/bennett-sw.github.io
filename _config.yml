@@ -22,7 +22,7 @@ title: Bennett Smith-Worthington
 email: bennettsmithworthington@g.harvard.edu
 description: >- # this means to ignore newlines until "baseurl:"
   Bennett Smith-Worthington's Academic Page
-baseurl: "/home" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: 
 github_username:  bennett-sw
