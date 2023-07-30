@@ -10,8 +10,9 @@ title: Home
 
     <h2>About Me</h2>
     <p> 
-    
-    Hello! I'm Bennett. I'm a [pre-doctoral research fellow](https://economics.harvard.edu/people/bennett-smith-worthington) with [Professor David Yang](http://davidyyang.com/); I'm also an affiliate with [Harvard's Evidence for Policy Design](https://epod.cid.harvard.edu/person/bennett-smith-worthington). I work on issues related to political economy, behavioral economics, the economics of education, and industrial organization. I am interested in how to model the interplay of cognitive distortions and market functionality, specifically how traditional economic theory is augmented with the inclusion of imperfect cognition. 
+     <a href="https://epod.cid.harvard.edu/person/bennett-smith-worthington">Harvard's Evidence for Policy Design</a>
+
+    Hello! I'm Bennett. I'm a  <a href="https://economics.harvard.edu/people/bennett-smith-worthington">pre-doctoral research fellow</a> with <a href="http://davidyyang.com/">Professor David Yang</a>; I'm also an affiliate with <a href="https://epod.cid.harvard.edu/person/bennett-smith-worthington">Harvard's Evidence for Policy Design</a>. I work on issues related to political economy, behavioral economics, the economics of education, and industrial organization. I am interested in how to model the interplay of cognitive distortions and market functionality, and more specifically how traditional economic theory is augmented with the inclusion of imperfect cognition. 
     </p>
   </div>
 </div>
