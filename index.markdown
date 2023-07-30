@@ -3,18 +3,15 @@ layout: home
 title: Home
 ---
 
-![Your Name](/path_to_your_image){: style="width:150px;height:200px;"}
+![Your Name](assets/bw.jpg){: style="width:150px;height:200px;"}
 
-# Welcome to my academic website
 
 ## About Me
 
-[Your Name]  
-[Your Title, like Ph.D. Candidate in XYZ at University of ABC]  
-[Your Contact Information]  
+[Bennett Smith-Worthington]  
+[Pre-Doctoral Fellow, Department of Economics, Harvard University]  
+[mailto:bennettsmithworthington@g.harvard.edu]  
 
-Here, write a short paragraph introducing yourself. For instance, talk about your academic background, your current role, and what you enjoy about your work.
-
-## Research Interests
-
-Here, write a short paragraph or bullet points about your research interests. This could include the fields you are interested in, the research you have done, and the projects you are currently working on.
+Hello! I'm Bennett. I'm a pre-doctoral research fellow with [Professor David Yang](http://davidyyang.com/). I work on issues related to political economy, behavioral economics, the economics of education, and industrial organization.
+## Research 
+Coming soon!
