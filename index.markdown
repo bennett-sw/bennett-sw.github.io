@@ -7,7 +7,6 @@ title: Home
   <img src="/assets/bw.jpg" style="width:180px;height:200px;margin-right:20px;">
   <div>
 
-    <h2>About Me</h2>
     <p> 
 
     Hello! I'm Bennett. I'm a <a href="https://economics.harvard.edu/people/bennett-smith-worthington">pre-doctoral research fellow</a> with <a href="http://davidyyang.com/">Professor David Yang</a>; I'm also an affiliate with <a href="https://epod.cid.harvard.edu/person/bennett-smith-worthington">Harvard's Evidence for Policy Design</a>. I graduated with a BA in Mathematics-Economics from Columbia University in 2022. </p>
