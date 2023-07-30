@@ -28,7 +28,10 @@ twitter_username:
 github_username:  bennett-sw
 
 # Build settings
-theme: minima
+#theme: minima
+#theme: minimal-mistakes-jekyll
+remote_theme: mmistakes/minimal-mistakes
+
 plugins:
   - jekyll-feed
 
