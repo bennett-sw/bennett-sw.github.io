@@ -9,7 +9,7 @@ title: Home
 
     <p> 
 
-    Hello! I'm Bennett. I'm a <a href="https://economics.harvard.edu/people/bennett-smith-worthington">pre-doctoral research fellow</a> with <a href="http://davidyyang.com/">Professor David Yang</a>; I'm also an affiliate with <a href="https://epod.cid.harvard.edu/person/bennett-smith-worthington">Harvard's Evidence for Policy Design</a>. I graduated with a BA in Mathematics-Economics from Columbia University in 2022. </p>
+    Hello! I'm Bennett. I'm a <a href="https://economics.harvard.edu/people/bennett-smith-worthington">pre-doctoral research fellow</a> with <a href="http://davidyyang.com/">Professor David Yang</a> in the Department of Economics at Harvard University; I'm also an affiliate with <a href="https://epod.cid.harvard.edu/person/bennett-smith-worthington">Harvard's Evidence for Policy Design</a>. I graduated with a BA in Mathematics-Economics from Columbia University in 2022. </p>
     <h2>Research Interests</h2>
 
     <p>
