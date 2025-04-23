@@ -1,0 +1,23 @@
+site_name: Spatial Model Documentation
+site_url: https://bennett-sw.github.io/spatial_model_docs/
+nav:
+  - Home: home.md 
+  - Overview: overview.md
+  #- File structure: file_structure.md 
+  - Code walkthrough: walkthrough.ipynb
+  - Command references: command_references.md 
+plugins:
+    - mkdocs-jupyter:
+          execute_ignore:
+             - "docs/walkthrough.ipynb"
+theme: readthedocs
+markdown_extensions:
+  - pymdownx.arithmatex:
+      generic: true
+  - attr_list
+  - footnotes
+
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
