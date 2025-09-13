@@ -4,7 +4,7 @@ title: Home
 ---
 
 <div style="display: flex;">
-  <img src="/assets/IMG_4610.jpeg" style="width:180px;height:200px;margin-right:20px;">
+  <img src="/assets/IMG_4610.jpg" style="width:180px;height:200px;margin-right:20px;">
   <div>
 
     <p> 
