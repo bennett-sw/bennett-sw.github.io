@@ -4,16 +4,16 @@ title: Home
 ---
 
 <div style="display: flex;">
-  <img src="/assets/bw.jpg" style="width:180px;height:200px;margin-right:20px;">
+  <img src="/assets/IMG_4610.jpeg" style="width:180px;height:200px;margin-right:20px;">
   <div>
 
     <p> 
 
-    Hello! I'm Bennett. I'm a <a href="https://economics.harvard.edu/people/bennett-smith-worthington-0">pre-doctoral research fellow</a> with <a href="http://davidyyang.com/">Professor David Yang</a> in the Department of Economics at Harvard University; I'm also an affiliate with <a href="https://epod.cid.harvard.edu/person/bennett-smith-worthington">Harvard's Evidence for Policy Design</a>. I graduated with a BA in Mathematics-Economics from Columbia University in 2022. </p>
+    Hello! I'm Bennett. I'm a first year <a href="https://economics.princeton.edu/graduate-program/graduate-student-directory/">PhD student in Economics at Princeton University</a>. Before this, I was a pre-doctoral research fellow with <a href="http://davidyyang.com/">Professor David Yang</a> in the Department of Economics at Harvard University. I graduated with a BA in Mathematics-Economics from Columbia University in 2022. </p>
     <h2>Research Interests</h2>
 
     <p>
-    I work on issues related to political economy, behavioral economics, the economics of education, and industrial organization. I am interested in how to model the interplay of cognitive distortions and market functionality, and more specifically how traditional economic theory is augmented with the inclusion of imperfect cognition. 
+    I am interested in issues related to behavioral economics, macroeconomics, and political economy. I generally work on modelling the interplay of cognitive distortions and traditional market mechanisms, often focusing on models of rational inattention. If you'd like to chat, feel free to reach me at </p><p><a href="mailto:bennettsw@princeton.edu">bennettsw@princeton.edu</a></p>. 
     </p>
   </div>
 </div>
