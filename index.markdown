@@ -13,7 +13,7 @@ title: Home
     <h2>Research Interests</h2>
 
     <p>
-    I am interested in issues related to behavioral economics, macroeconomics, and political economy. I generally work on modelling the interplay of cognitive distortions and traditional market mechanisms, often focusing on models of rational inattention. If you'd like to chat, feel free to reach me at </p><p><a href="mailto:bennettsw@princeton.edu">bennettsw@princeton.edu</a></p>. 
+    I am interested in issues related to behavioral economics, macroeconomics, and political economy. I generally work on modelling the interplay of cognitive distortions and traditional market mechanisms, often focusing on models of rational inattention. If you'd like to chat, feel free to reach me at <a href="mailto:bennettsw@princeton.edu">bennettsw@princeton.edu</a>. 
     </p>
   </div>
 </div>
