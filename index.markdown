@@ -18,7 +18,7 @@ title:
  
   <div style="margin-bottom: 20px;">
     <p style="margin-bottom: 6px;">
-      <a href="/assets/sign_paper.pdf" style="font-size: 1.1em; font-weight: bold;">A Network Approach to Geopolitics</a><br>
+      <a href="/assets/nag_paper.pdf" style="font-size: 1.1em; font-weight: bold;">A Network Approach to Geopolitics</a><br>
       <span style="color: #555;">with <a href="https://ernestliu.scholar.princeton.edu"> Ernest Liu</a>, <a href="https://stephenredding.github.io/index.html"> Stephen Redding</a>, and <a href="http://davidyyang.com/"> David Yang</a></span>
     </p>
     <a class="abstract-toggle" onclick="var w = document.getElementById('abstract-sign'); var open = w.classList.toggle('open'); this.querySelector('span').textContent = open ? '▾' : '▸';"><span>&#9656;</span> Abstract</a>
