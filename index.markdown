@@ -26,7 +26,7 @@ title:
 
   <div class="block">
     <div class="block-title paper-title">
-      <a href="/assets/nag_paper.pdf">A Network Approach to Geopolitics</a> <a href="https://www.nber.org/papers/w35951">[NBER WP version]</a>
+      <a href="/assets/nag_paper.pdf">A Network Approach to Geopolitics</a> <a class="nber-link" href="https://www.nber.org/papers/w35951">NBER WP link</a>
     </div>
     <div class="block-body">
     <p style="margin-bottom: 6px;">
