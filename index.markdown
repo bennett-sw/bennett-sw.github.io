@@ -5,20 +5,31 @@ title:
 
 <div style="display: flex;">
   <div style="margin-right: 20px; flex-shrink: 0; text-align: center;">
-    <img src="/assets/IMG_4610.jpg" style="width:180px;height:200px;object-fit:cover;">
-    <p style="font-size: 0.78em; color: #555; margin-top: 6px; width: 180px; line-height: 1.5; white-space: nowrap;">Bennett Smith-Worthington<br>Department of Economics<br>Princeton University</p>
+    <figure class="photo-card">
+      <img src="/assets/IMG_4610.jpg" alt="Bennett Smith-Worthington">
+      <figcaption>Bennett Smith-Worthington<br>Department of Economics<br><span class="princeton-mark">Princeton University</span></figcaption>
+    </figure>
   </div>
   <div>
 
-    <p> 
-
+    <div class="block" id="about">
+      <div class="block-title">About</div>
+      <div class="block-body">
+    <p>
     Hello! I'm Bennett. I'm a second year <a href="https://economics.princeton.edu/graduate-program/graduate-student-directory/">PhD student in Economics at Princeton University</a>. Previously, I was a pre-doctoral research fellow with <a href="http://davidyyang.com/">Professor David Yang</a> in the Department of Economics at Harvard University. I graduated with a BA in Mathematics-Economics from Columbia University in 2022. </p>
+      </div>
+    </div>
 
-  <h2>Working Papers</h2>
- 
-  <div style="margin-bottom: 20px;">
+    <div class="block" id="papers">
+      <div class="block-title">Working Papers</div>
+      <div class="block-body">
+
+  <div class="block">
+    <div class="block-title paper-title">
+      <a href="/assets/nag_paper.pdf">A Network Approach to Geopolitics</a> <a href="https://www.nber.org/papers/w35951">[NBER WP version]</a>
+    </div>
+    <div class="block-body">
     <p style="margin-bottom: 6px;">
-      <a href="/assets/nag_paper.pdf" style="font-size: 1.1em; font-weight: bold;">A Network Approach to Geopolitics</a><br>
       <span style="color: #555;">with <a href="https://ernestliu.scholar.princeton.edu"> Ernest Liu</a>, <a href="https://stephenredding.github.io/index.html"> Stephen Redding</a>, and <a href="http://davidyyang.com/"> David Yang</a></span>
     </p>
     <a class="abstract-toggle" onclick="var w = document.getElementById('abstract-sign'); var open = w.classList.toggle('open'); this.querySelector('span').textContent = open ? '▾' : '▸';"><span>&#9656;</span> Abstract</a>
@@ -29,15 +40,20 @@ title:
         </div>
       </div>
     </div>
+    </div>
   </div>
 
+      </div>
+    </div>
 
-
-    <h2>Research Interests</h2>
-
+    <div class="block" id="research">
+      <div class="block-title">Research Interests</div>
+      <div class="block-body">
     <p>
-    I am interested in issues related to behavioral economics, macroeconomics, and political economy. I generally work on modelling the interplay of cognitive distortions and traditional market mechanisms, often focusing on models of rational inattention. If you'd like to chat, feel free to reach me at <a href="mailto:bennettsw@princeton.edu">bennettsw@princeton.edu</a>. 
+    I am interested in issues related to behavioral economics, macroeconomics, and political economy. I generally work on modelling the interplay of cognitive distortions and traditional market mechanisms, often focusing on models of rational inattention. If you'd like to chat, feel free to reach me at <a href="mailto:bennettsw@princeton.edu">bennettsw@princeton.edu</a>.
     </p>
+      </div>
+    </div>
   </div>
 </div>
 

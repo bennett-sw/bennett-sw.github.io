@@ -2,15 +2,30 @@
 ---
 @import url("https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&display=swap");
 
-$brand-color: #1756a9;
-$background-color: #faf8fc;
+$brand-color: #6c6a66;
+$background-color: #f3f1ec;
 $base-font-family: "Source Serif 4", Georgia, serif;
 
 @import "minima";
 
+// Site palette ("graphite on canvas"). Change these to recolor everything.
+:root {
+  --ink: #6c6a66;         // bars, borders, links
+  --ink-dark: #494845;    // rule under the top bar / above the footer
+  --paper: #faf9f7;       // block bodies
+  --paper-inner: #fdfdfc; // bodies of blocks nested in blocks
+  --page: #f3f1ec;        // page background
+  --accent: #f37021;      // highlighter orange (Princeton)
+  --shadow: color-mix(in srgb, var(--ink) 35%, var(--page)); // pale offset shadows
+}
+
+body {
+  background-color: var(--page);
+}
+
 // "▸ Abstract" text toggle.
 .abstract-toggle {
-  color: $brand-color;
+  color: var(--ink);
   cursor: pointer;
   user-select: none;
   font-size: 0.95em;
@@ -24,6 +39,7 @@ $base-font-family: "Source Serif 4", Georgia, serif;
 .abstract-wrap {
   display: grid;
   grid-template-rows: 0fr;
+  transition: grid-template-rows 0.35s ease;
 
   &.open {
     grid-template-rows: 1fr;
@@ -37,7 +53,268 @@ $base-font-family: "Source Serif 4", Georgia, serif;
 .abstract-box {
   margin-top: 10px;
   padding: 12px 16px;
-  background: #eef3fa;
-  border-left: 3px solid $brand-color;
+  background: var(--paper);
+  border-left: 3px solid var(--ink);
   font-size: 0.95em;
+}
+
+// Retro Beamer-style "theorem blocks": ink border, hard offset shadow, paper grain.
+$paper-grain: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.07'/%3E%3C/svg%3E");
+
+.block {
+  margin: 0 6px 26px 0;
+  border: 1.5px solid var(--ink);
+  box-shadow: 5px 5px 0 var(--shadow);
+}
+
+.block-title {
+  background: var(--ink);
+  color: #fff;
+  padding: 5px 14px 6px;
+  font-variant: small-caps;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+
+  a {
+    color: #fff;
+  }
+}
+
+// Paper titles keep normal case and read as the item's name.
+.paper-title {
+  font-variant: normal;
+  letter-spacing: normal;
+  font-weight: normal;
+
+  a:first-child {
+    font-size: 1.1em;
+    font-weight: bold;
+  }
+}
+
+.block-body {
+  background: $paper-grain, var(--paper);
+  padding: 12px 14px 14px;
+
+  > p:last-child,
+  > .block:last-child {
+    margin-bottom: 0;
+  }
+
+  // The block already supplies the paper, so the abstract sits flat inside it.
+  .abstract-box {
+    background: none;
+    border-left: none;
+    padding: 0;
+  }
+}
+
+// A block nested in a block (e.g. a paper inside "Working Papers") gets a lighter
+// body and a smaller shadow so it reads as an item within the section.
+.block .block {
+  margin-bottom: 20px;
+  box-shadow: 3px 3px 0 var(--shadow);
+
+  .block-body {
+    background: $paper-grain, var(--paper-inner);
+  }
+}
+
+// Photo as a polaroid-style card with the caption on its bottom margin.
+.photo-card {
+  width: 180px;
+  margin: 0 6px 0 0;
+  padding: 7px 7px 10px;
+  background: $paper-grain, var(--paper-inner);
+  border: 1.5px solid var(--ink);
+  box-shadow: 5px 5px 0 var(--shadow);
+
+  // Slightly warm, faded "film" look.
+  img {
+    display: block;
+    width: 180px;
+    height: 200px;
+    object-fit: cover;
+    filter: sepia(0.2) saturate(0.85) contrast(1.05) brightness(1.02);
+  }
+
+  figcaption {
+    margin-top: 9px;
+    font-size: 0.78em;
+    line-height: 1.5;
+    color: #000;
+    white-space: nowrap;
+  }
+}
+
+// Blocks and the photo settle onto the page on load, one after another.
+@keyframes set-down {
+  from {
+    opacity: 0;
+    transform: translate(-4px, -4px);
+    box-shadow: 9px 9px 0 transparent;
+  }
+}
+
+.photo-card,
+.page-content .block {
+  animation: set-down 0.5s ease-out backwards;
+}
+
+#about { animation-delay: 0.08s; }
+#papers { animation-delay: 0.16s; }
+#research { animation-delay: 0.24s; }
+
+.block .block {
+  animation: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .photo-card,
+  .page-content .block {
+    animation: none;
+  }
+}
+
+// Top bar: solid ink with a darker rule underneath, like a block title spanning the page.
+.site-header {
+  background: var(--ink);
+  border-top: none;
+  border-bottom: 4px solid var(--ink-dark);
+}
+
+.site-title,
+.site-title:visited {
+  color: #fff;
+  font-weight: 600;
+  font-variant: small-caps;
+  letter-spacing: 0.04em;
+}
+
+// Bottom bar mirrors the top bar.
+.site-footer {
+  background: var(--ink);
+  border-top: 4px solid var(--ink-dark);
+  color: #fff;
+
+  a,
+  a:visited {
+    color: #fff;
+  }
+}
+
+// Letterhead layout: identity on the left, contact details on the right.
+.footer-letterhead {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 16px 40px;
+  line-height: 1.6;
+
+  // Minima's clearfix pseudo-elements would otherwise act as invisible flex items.
+  &::before,
+  &::after {
+    display: none;
+  }
+}
+
+.footer-identity {
+  color: rgba(255, 255, 255, 0.85);
+  text-align: center;
+}
+
+.footer-name {
+  color: #fff;
+  font-size: 1.15em;
+  font-weight: 600;
+}
+
+.footer-contact {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 2px 14px;
+  margin: 0;
+
+  dt {
+    color: rgba(255, 255, 255, 0.7);
+    font-variant: small-caps;
+    letter-spacing: 0.05em;
+    text-align: right;
+  }
+
+  dd {
+    margin: 0;
+  }
+}
+
+// Inline line icons (see _includes/icon.html).
+.icon {
+  width: 1em;
+  height: 1em;
+  margin-right: 0.4em;
+  vertical-align: -0.125em;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+// Links in text and in the footer get a faint orange highlighter stroke instead of an
+// underline; it fills in on hover. Links in the title bars just underline on hover.
+.page-content a,
+.page-content a:visited {
+  color: var(--ink);
+  text-decoration: none;
+}
+
+// The highlighter band, which draws itself in shortly after the page loads.
+%highlight {
+  background-image: linear-gradient(color-mix(in srgb, var(--accent) 44%, transparent), color-mix(in srgb, var(--accent) 44%, transparent));
+  background-repeat: no-repeat;
+  background-position: 0 calc(100% - 0.1em);
+  background-size: 100% 0.4em;
+  animation: highlight-draw 0.75s cubic-bezier(0.3, 0.7, 0.4, 1) 0.5s backwards;
+}
+
+@keyframes highlight-draw {
+  from {
+    background-size: 0 0.4em;
+  }
+}
+
+.block-body a:not(.abstract-toggle),
+.site-footer a {
+  @extend %highlight;
+  transition: background-size 0.2s ease;
+  text-decoration: none;
+
+  &:hover {
+    background-size: 100% 0.68em;
+    text-decoration: none;
+  }
+}
+
+// "Princeton University" under the photo carries the same mark, tying the orange to Princeton.
+.princeton-mark {
+  @extend %highlight;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .block-body a:not(.abstract-toggle),
+  .site-footer a,
+  .princeton-mark {
+    animation: none;
+  }
+}
+
+.block-title a,
+.block-title a:visited {
+  color: #fff;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }

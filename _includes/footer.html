@@ -1,1 +1,18 @@
-<!-- Footer intentionally removed. Delete this file to restore the theme's default footer. -->
+<footer class="site-footer h-card">
+  <data class="u-url" href="{{ "/" | relative_url }}"></data>
+
+  <div class="wrapper footer-letterhead">
+    <div class="footer-identity">
+      <span class="p-name footer-name">{{ site.title | escape }}</span><br>
+      <span class="p-org">Department of Economics<br>Princeton University</span>
+    </div>
+
+    <dl class="footer-contact">
+      <dt>{% include icon.html name="mail" %}Email</dt>
+      <dd><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></dd>
+      <dt>{% include icon.html name="github" %}GitHub</dt>
+      <dd><a href="https://github.com/{{ site.github_username | strip | cgi_escape }}">{{ site.github_username | strip }}</a></dd>
+    </dl>
+  </div>
+
+</footer>
